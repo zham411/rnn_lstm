@@ -1,4 +1,4 @@
-# Created a Long/Short Term Memory (LSTM) network model.
+# Long/Short Term Memory (LSTM) network model.
 # It runs as a Recurrent Neural Network (RNN).
 
 
@@ -11,8 +11,7 @@ from tensorflow.keras.models import Sequential
 if __name__ == "__main__":
     """
     This assumes that the data has been cleaned and prepped for the model.
-    Foe the Mega model specifically (and for all models at ODUSA generally,
-    all cleaning happens in RStudio after scrapes and mining happen in Python.
+    For this project, all cleaning happened in RStudio and data mining was done in Python.
     """
     df = pd.read_csv("sample_data.csv", header=None)
     len_data = df.shape[:1][0]
